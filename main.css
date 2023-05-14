@@ -1,0 +1,185 @@
+:root {
+    --color1: white;
+    --color2: goldenrod;
+    --color3: black;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.home{
+    overflow: hidden;
+}
+.home-image,.Testimony-image {
+    width: 100vw;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    width: 10vh;
+    height: 5vw;
+    border-radius: 10%;
+}
+.main-text {
+    position: absolute;
+    bottom: 5rem;
+    color: var(--color1);
+    font-size: larger;
+    padding-left: 2rem;
+}
+.property {
+    background-color: var(--color2);
+}
+.property-text, .House-Choice, .Testimonies p, .Opportunity {
+    text-align: center;
+    font-size: larger;
+    padding-bottom: 2rem;
+}
+.properties {
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.properties-image {
+    width: 30vw;
+    height: 50vh;
+    text-align: center;
+}
+.property-display {
+    padding: 2rem;
+    
+}
+.property-one, .property-two {
+    border-color: var(--color2);
+    border-width: thin;
+    border-style: solid;
+    padding: 2rem;
+}
+.property-button, input[type=submit] {
+    font-size: medium;
+    color: var(--color2);
+    background-color: var(--color3);
+    padding: 0.5rem 1rem;
+    border-radius: 5%;
+}
+em {
+    font-weight: bolder;
+}
+.buttons {
+    gap: 10rem;
+    margin-top: 1rem;
+}
+.form {
+    background-color: var(--color2);
+    padding: 2rem 0;
+}
+form {
+    margin: auto;
+    padding: 2rem;
+    border-radius: 5%;
+    border-color: transparent;
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+    width: 25vw;
+    background-color: var(--color1);
+}
+input {
+    margin-bottom: 2rem;
+}
+.Testimonies {
+    overflow: hidden;
+}
+.Persons {
+    margin-left: 23%;
+    color: var(--color1);
+    position: absolute;
+    font-size: larger;
+    font-weight: bolder;
+}
+.Contact {
+    background-color: var(--color3);
+    color: var(--color1);
+    padding: 4rem;
+}
+.Social-Media {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-size: larger;
+}
+.Contact h3 {
+    font-size: small;
+}
+.fa-instagram, .fa-youtube {
+    color: red;
+}
+
+
+@media (orientation:portrait) {
+    body {
+        overflow: visible;
+    }
+    .home-image {
+        width: 100vw;
+        height: 100vh;
+    }
+    .logo {
+        height: 9vh;
+    }
+    .main-text {
+        font-size: large;
+        padding-right: 2rem;
+        bottom: 7rem;
+    }
+    .properties {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .properties-image {
+        width: 50vw;
+        height: 30vh;
+    }
+    .property-display {
+        padding: 0;
+    }
+    .property-one, .property-two {
+        padding: 1rem;
+        font-size: small;
+        width: 60vw;
+        margin: auto;
+    }
+    .property-text {
+        font-size: small;
+        text-align: center;
+    }
+    .form {
+        margin-top: 3rem;
+    }
+    form {
+        width: 70vw;
+    }
+    
+}
+@media (700px <= width <= 950px) {
+    .main-text {
+        font-size:x-large;
+        bottom: 20rem;
+    }
+    .property-one, .property-two {
+        font-size:large;
+    }
+    .property-text {
+        font-size: large;
+    }
+    form {
+        width: 50vw;
+        font-size: large;
+    }
+    
+}
